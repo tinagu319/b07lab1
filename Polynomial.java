@@ -155,6 +155,7 @@ public class Polynomial
         {
             if (newcoe[i]==0) num+=1;
         }
+        
         int g=len-num;
         double[] c=new double[g];
         int[] e=new int[g];
