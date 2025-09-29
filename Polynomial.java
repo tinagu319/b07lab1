@@ -13,14 +13,14 @@ public class Polynomial
         this.exponents=new int[1];
         this.exponents[0]=0;
     }
-    public Polynomial(double[] coe, int[] exponents)
+    public Polynomial(double[] coe, int[] exp)
     {
         this.coe=new double[coe.length];
-        this.exponents=new int[exponents.length];
+        this.exponents=new int[exp.length];
         for (int i=0;i<coe.length;i++)
         {
             this.coe[i]=coe[i];
-            this.exponents[i]=exponents[i];
+            this.exponents[i]=exp[i];
         }
 
     }
@@ -155,7 +155,7 @@ public class Polynomial
         {
             if (newcoe[i]==0) num+=1;
         }
-        
+
         int g=len-num;
         double[] c=new double[g];
         int[] e=new int[g];
